@@ -1,0 +1,178 @@
+/**************************************************************************
+MEDIA QUERIES
+***************************************************************************/
+
+
+@media only screen and (min-width: 769px) {
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+
+    /***************************************
+    HEADING and FOOTING
+    ****************************************/
+
+    .main-header {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        align-items: center;
+        font-family: 'Cinzel', 'Orbitron', sans-serif, serif;
+        letter-spacing: 0.30rem;
+        background-color: #000;
+
+        /*Opacity start*/
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.80;
+        -khtml-opacity: 0.8;
+        opacity: 0.8;
+        /*Opacity end*/
+    }
+
+
+    #logo { /*** h1 & h2 ***/
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        justify-self: center;
+        color: white;
+
+    }
+
+    .main-h1 {
+        margin: 1px;
+        padding-top: 15px;
+        font-size: 3.75rem;
+        line-height: 3.8rem;
+        border-bottom: 3px solid white;
+        border-radius: 5px;
+    } 
+
+    .main-h2{
+        font-size: 2rem;
+        margin-top: 20px;
+        line-height: .8rem;
+
+    }
+
+    footer {
+        font-size: 0.75rem;
+        text-align: center;
+        padding: 25px;
+        clear: both;
+        background-color: #000;
+
+
+        /*Opacity start*/
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.80;
+        -khtml-opacity: 0.8;
+        opacity: 0.8;
+        /*Opacity end*/
+    }
+
+    .footer-copy {
+        color: white;
+        padding-top: 10px;
+        letter-spacing: .20rem;
+        margin: 0;
+    }
+
+    .social-icon {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+        background-color: white;
+        border-radius: 75%
+    }
+
+    /***************************************
+    NAVIGATION
+    ****************************************/
+
+    .main-nav {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        align-self: end;
+        padding-bottom: 0px;
+    }
+
+    .main-nav-ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style: none;
+        margin: 0 auto;
+        padding: 10px;
+
+    }
+
+    .main-nav-list {
+        font-size: 1rem;
+        margin: 0 5rem ;
+
+
+    }
+
+    .main-nav-a {
+        color: white;
+        font-weight: 300;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+
+    }
+
+    .main-nav-a:hover {
+        color: #32673f;
+    }
+
+    .selected {
+        color: #32673f;
+    }
+    /***************************************
+    PAGE: Contact
+    ****************************************/
+    #primary {
+        display: grid;
+        grid-template-columns: repeat(4 1fr);
+        grid-template-rows: repeat(4 1fr);
+
+    }
+    .contact-head{
+        grid-row: 1/2;
+
+    }
+    .contact-info {
+        grid-column: 2/3
+
+            list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .contact-info a {
+        min-height: 20px;
+        background-repeat: no-repeat;
+        background-size: 20px 20px;
+        padding: 0 0 0 30px;
+        margin: 0 0 10px;
+    }
+
+    .contact-info li.mail a {
+        background-image: url('../img1/mail.png');
+        color: white;
+    }
+
+
+    .contact-info li.twitter a {
+        background-image: url('../img1/twitter.png');
+        color: white;
+    }
+
+
+}
